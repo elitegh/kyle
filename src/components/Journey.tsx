@@ -49,7 +49,6 @@ export function Journey() {
             <h3 className="font-display text-2xl text-fg mb-2">{education.degree}</h3>
             <p className="text-fg-muted">{education.school}</p>
             <p className="text-fg-muted">{education.period}</p>
-            <p className="text-fg-muted mt-2">{education.location}</p>
           </motion.aside>
         </div>
       </div>

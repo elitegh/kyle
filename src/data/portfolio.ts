@@ -53,8 +53,7 @@ export const experience = [
 export const education = {
   degree: "Bachelor of Science in Computer Science",
   school: "Sam Houston State University",
-  period: "2010 - 2014",
-  location: "Huntsville, TX",
+  period: "2010 - 2014"
 };
 
 export const skills = [
