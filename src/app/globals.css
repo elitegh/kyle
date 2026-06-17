@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[data-theme="dark"] {
+  --background: #050508;
+  --foreground: #ffffff;
+  --muted: #a8a8c0;
+  --glass-bg: rgba(255, 255, 255, 0.04);
+  --glass-bg-strong: rgba(255, 255, 255, 0.07);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-border-strong: rgba(255, 255, 255, 0.12);
+  --grid-line: rgba(255, 255, 255, 0.03);
+  --vignette: rgba(5, 5, 8, 0.8);
+  --orb-opacity: 1;
+  --mesh-opacity: 0.9;
+  --glow-shadow: 0 0 40px -10px rgba(168, 85, 247, 0.4), 0 0 80px -20px rgba(34, 211, 238, 0.2);
+  --scrollbar-track: #050508;
+}
+
+[data-theme="light"] {
+  --background: #f6f4ff;
+  --foreground: #12121a;
+  --muted: #5c5c78;
+  --glass-bg: rgba(255, 255, 255, 0.65);
+  --glass-bg-strong: rgba(255, 255, 255, 0.85);
+  --glass-border: rgba(0, 0, 0, 0.06);
+  --glass-border-strong: rgba(0, 0, 0, 0.1);
+  --grid-line: rgba(0, 0, 0, 0.05);
+  --vignette: rgba(246, 244, 255, 0.75);
+  --orb-opacity: 0.55;
+  --mesh-opacity: 0.5;
+  --glow-shadow: 0 0 40px -10px rgba(168, 85, 247, 0.2), 0 0 60px -15px rgba(34, 211, 238, 0.15);
+  --scrollbar-track: #f6f4ff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  overflow-x: hidden;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+::selection {
+  background: rgba(168, 85, 247, 0.45);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #a855f7, #22d3ee);
+  border-radius: 4px;
+}
+
+@layer utilities {
+  .text-fg {
+    color: var(--foreground);
+  }
+
+  .text-fg-muted {
+    color: var(--muted);
+  }
+
+  .bg-canvas {
+    background-color: var(--background);
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-glow-cyan via-glow-violet to-glow-pink;
+  }
+
+  .text-gradient-warm {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-glow-orange via-glow-pink to-glow-violet;
+  }
+
+  .glass {
+    background: var(--glass-bg);
+    @apply backdrop-blur-xl border;
+    border-color: var(--glass-border);
+  }
+
+  .glass-strong {
+    background: var(--glass-bg-strong);
+    @apply backdrop-blur-2xl border;
+    border-color: var(--glass-border-strong);
+  }
+
+  .glow-ring {
+    box-shadow:
+      0 0 0 1px var(--glass-border),
+      var(--glow-shadow);
+  }
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, black 20%, transparent 70%);
+}
+
+.mesh-layer {
+  opacity: var(--mesh-opacity);
+}
+
+[data-theme="light"] .bg-mesh-gradient {
+  background-image:
+    radial-gradient(at 40% 20%, rgba(168, 85, 247, 0.2) 0px, transparent 50%),
+    radial-gradient(at 80% 0%, rgba(34, 211, 238, 0.15) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, rgba(255, 107, 203, 0.12) 0px, transparent 50%),
+    radial-gradient(at 80% 50%, rgba(163, 230, 53, 0.1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(251, 146, 60, 0.12) 0px, transparent 50%);
+}
