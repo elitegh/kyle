@@ -5,11 +5,11 @@ export const site = {
     "I build scalable backend systems with Node.js and Python, focusing on reliable APIs, distributed services, performance, and clean system architecture — with React experience for delivering polished user-facing features when needed.",
   /** Replace with your photo: add public/profile.jpg and set to "/profile.jpg" */
   profileImage: "/profile.jpg",
-  email: "kylarsen84@gmail.com",
+  email: "larsenkyle84@gmail.com",
   phone: "(214) 856-0375",
   location: "Conroe, TX",
   social: {
-    github: "https://github.com/kylarsen",
+    github: "https://github.com/kylelarsen84",
     linkedin: "",
     twitter: "",
   },
