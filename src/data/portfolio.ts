@@ -2,7 +2,7 @@ export const site = {
   name: "Kyle Larsen",
   title: "Senior Software Engineer",
   tagline:
-    "I build high-impact frontend experiences with modern React and Next.js, blending performance, product thinking, and polished interaction design.",
+    "I build scalable backend systems with Node.js and Python, focusing on reliable APIs, distributed services, performance, and clean system architecture — with React experience for delivering polished user-facing features when needed.",
   /** Replace with your photo: add public/profile.jpg and set to "/profile.jpg" */
   profileImage: "/profile.jpg",
   email: "kylarsen84@gmail.com",
@@ -10,14 +10,14 @@ export const site = {
   location: "Conroe, TX",
   social: {
     github: "https://github.com/kylarsen",
-    linkedin: "https://www.linkedin.com/in/kyle-larsen-1ba584411",
+    linkedin: "",
     twitter: "",
   },
 };
 
 export const about = {
   paragraphs: [
-    "I am a software engineer focused on frontend architecture and product delivery. I enjoy turning complex requirements into clean, scalable user experiences.",
+    "I am a a Senior Software Engineer with strong experience building scalable backend platforms, distributed APIs, and event-driven microservices using Node.js, TypeScript, Python, AWS, Kafka, and PostgreSQL.",
     "Over the last decade, I have worked across enterprise platforms in e-commerce, pricing, and internal tools, partnering with cross-functional teams to ship reliable software at scale.",
   ],
   highlights: [
@@ -31,22 +31,22 @@ export const experience = [
   {
     company: "Amazon",
     location: "Remote",
-    period: "Mar 2024 - Present",
+    period: "Jul 2023 - Present",
   },
   {
     company: "PROS",
-    location: "Hybrid",
-    period: "Aug 2020 - Feb 2024",
+    location: "Houston, TX",
+    period: "Mar 2020 - Jun 2023",
   },
   {
     company: "Sysco",
     location: "Houston, TX",
-    period: "May 2017 - Jul 2020",
+    period: "Sep 2017 - Feb 2020",
   },
   {
     company: "Idera",
     location: "Houston, TX",
-    period: "Jun 2014 - Apr 2017",
+    period: "Jun 2015 - Aug 2017",
   },
 ];
 
@@ -58,44 +58,46 @@ export const education = {
 };
 
 export const skills = [
-  { name: "React / Next.js", level: 95, color: "from-cyan-400 to-blue-500" },
-  { name: "TypeScript", level: 90, color: "from-violet-400 to-purple-600" },
-  { name: "Tailwind CSS", level: 92, color: "from-pink-400 to-rose-500" },
-  { name: "Framer Motion", level: 88, color: "from-lime-400 to-emerald-500" },
-  { name: "Node.js", level: 80, color: "from-amber-400 to-orange-500" },
-  { name: "UI / UX Design", level: 85, color: "from-fuchsia-400 to-violet-600" },
+  { name: "Node.js", level: 97, color: "from-amber-400 to-orange-500" },
+  { name: "Python", level: 95, color: "from-amber-400 to-orange-500" },
+  { name: "NestJS", level: 95, color: "from-lime-400 to-emerald-500" },
+  { name: "FastAPI", level: 93, color: "from-lime-400 to-emerald-500" },
+  { name: "SQL", level: 91, color: "from-pink-400 to-rose-500" },
+  { name: "AWS", level: 91, color: "from-pink-400 to-rose-500" },
+  { name: "TypeScript", level: 95, color: "from-cyan-400 to-blue-500" },
+  { name: "React / Next.js", level: 91, color: "from-cyan-400 to-blue-500" },
 ];
 
 export const projects = [
   {
-    title: "Aurora Dashboard",
+    title: "Aurora Workflow Engine",
     description:
-      "Real-time analytics with glassmorphic panels, animated charts, and a living gradient theme that shifts with data.",
-    tags: ["Next.js", "D3", "WebSockets"],
+      "Backend workflow platform built with Node.js and Python for async job processing, API orchestration, retry logic, and real-time operational metrics.",
+    tags: ["Node.js", "Python", "Kafka"],
     gradient: "from-cyan-500 via-violet-500 to-pink-500",
     link: "#",
   },
   {
-    title: "Neon Commerce",
+    title: "Neon API Platform",
     description:
-      "E-commerce rebuilt for speed — micro-interactions on every cart action, 3D product previews, and checkout in under 60 seconds.",
-    tags: ["React", "Stripe", "Three.js"],
+      "Scalable backend API system using Node.js, Python, PostgreSQL, and Redis to handle authentication, payments logic, caching, and service-to-service communication.",
+    tags: ["Node.js", "Python", "PostgreSQL"],
     gradient: "from-lime-400 via-cyan-400 to-blue-500",
     link: "#",
   },
   {
-    title: "Pulse Social",
+    title: "Pulse Data Pipeline",
     description:
-      "A social platform where feeds breathe — staggered reveals, reaction bursts, and a dark-mode-first design system.",
-    tags: ["Next.js", "GraphQL", "Redis"],
+      "Event-driven backend pipeline that processes high-volume data streams with Python workers, Node.js APIs, Redis queues, and automated monitoring.",
+    tags: ["Python", "Node.js", "Redis"],
     gradient: "from-orange-400 via-pink-500 to-purple-600",
     link: "#",
   },
   {
-    title: "Studio OS",
+    title: "Studio Frontend OS",
     description:
-      "Creative agency toolkit: project boards, client portals, and brand asset libraries in one cohesive workspace.",
-    tags: ["TypeScript", "Prisma", "Figma API"],
+      "Modern frontend workspace built with React and Tailwind CSS for managing project boards, user permissions, file previews, audit views, and responsive workflow dashboards.",
+    tags: ["React", "Tailwind CSS", "TypeScript"],
     gradient: "from-violet-500 via-fuchsia-500 to-rose-400",
     link: "#",
   },
