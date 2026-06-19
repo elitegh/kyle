@@ -10,7 +10,7 @@ export const site = {
   location: "Conroe, TX",
   social: {
     github: "https://github.com/kylelarsen84",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com",
     twitter: "",
   },
 };
